@@ -4,9 +4,7 @@
   "navigation": [
     {
       "group": "Introduction",
-      "pages": [
-        "introduction/overview"
-      ]
+      "pages": ["introduction/overview"]
     }
   ]
 }
