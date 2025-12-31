@@ -11,12 +11,11 @@
         "groups": [
           {
             "group": "Introduction",
-            "pages": [
-              {
-                "path": "introduction/overview",
-                "title": "Vue d’ensemble"
-              }
-            ]
+"pages": [
+  { "path": "introduction/overview", "title": "Vue d’ensemble" },
+  { "path": "introduction/getting-started", "title": "Démarrer" }
+]
+
           }
         ]
       }
