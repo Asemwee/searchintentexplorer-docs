@@ -5,6 +5,12 @@
     "primary": "#16a34a"
   },
   "navigation": {
+    "global": {
+      "languages": [
+        { "language": "fr", "default": true, "href": "/fr/introduction/overview" },
+        { "language": "en", "href": "/en/introduction/overview" }
+      ]
+    },
     "tabs": [
       {
         "tab": "Guides",
@@ -12,10 +18,10 @@
           {
             "group": "Introduction",
             "pages": [
-              "fr/introduction/overview",
-              "fr/introduction/getting-started",
-              "en/introduction/overview",
-              "en/introduction/getting-started"
+              { "path": "fr/introduction/overview", "title": "Vue d’ensemble" },
+              { "path": "fr/introduction/getting-started", "title": "Démarrer" },
+              { "path": "en/introduction/overview", "title": "Overview" },
+              { "path": "en/introduction/getting-started", "title": "Getting started" }
             ]
           }
         ]
