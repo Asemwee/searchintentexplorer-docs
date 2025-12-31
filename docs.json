@@ -4,6 +4,10 @@
   "colors": {
     "primary": "#16a34a"
   },
+  "i18n": {
+    "defaultLanguage": "en",
+    "languages": ["en", "fr", "es", "de", "it"]
+  },
   "navigation": {
     "tabs": [
       {
@@ -11,7 +15,33 @@
         "groups": [
           {
             "group": "Introduction",
-            "pages": ["introduction/overview"]
+            "pages": [
+              {
+                "path": "introduction/en/overview",
+                "title": "Overview",
+                "language": "en"
+              },
+              {
+                "path": "introduction/fr/overview",
+                "title": "Vue d’ensemble",
+                "language": "fr"
+              },
+              {
+                "path": "introduction/es/overview",
+                "title": "Visión general",
+                "language": "es"
+              },
+              {
+                "path": "introduction/de/overview",
+                "title": "Übersicht",
+                "language": "de"
+              },
+              {
+                "path": "introduction/it/overview",
+                "title": "Panoramica",
+                "language": "it"
+              }
+            ]
           }
         ]
       }
