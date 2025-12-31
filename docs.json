@@ -4,6 +4,10 @@
   "colors": {
     "primary": "#16a34a"
   },
+  "i18n": {
+    "defaultLanguage": "fr",
+    "languages": ["fr", "en", "es", "de", "it"]
+  },
   "navigation": {
     "tabs": [
       {
@@ -12,8 +16,15 @@
           {
             "group": "Introduction",
             "pages": [
-              "introduction/overview",
-              "introduction/getting-started"
+              { "path": "introduction/fr/overview", "language": "fr" },
+              { "path": "introduction/fr/getting-started", "language": "fr" },
+
+              { "path": "introduction/en/overview", "language": "en" },
+              { "path": "introduction/en/getting-started", "language": "en" },
+
+              { "path": "introduction/es/overview", "language": "es" },
+              { "path": "introduction/de/overview", "language": "de" },
+              { "path": "introduction/it/overview", "language": "it" }
             ]
           }
         ]
