@@ -15,7 +15,7 @@
             "pages": [
               "fr/introduction/overview",
               "fr/introduction/getting-started",
-              "fr/when-using"
+              "fr/introduction/when-using"
             ]
           }
         ]
@@ -28,7 +28,7 @@
             "pages": [
               "en/introduction/overview",
               "en/introduction/getting-started",
-              "en/when-using"
+              "en/introduction/when-using"
             ]
           }
         ]
