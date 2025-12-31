@@ -1,12 +1,9 @@
 {
   "name": "Search Intent Explorer",
   "theme": "mint",
-  "colors": { "primary": "#16a34a" },
-  "i18n": {
-    "defaultLanguage": "fr",
-    "languages": ["fr", "en", "es", "de", "it"]
+  "colors": {
+    "primary": "#16a34a"
   },
-  "homepage": "fr/overview",
   "navigation": {
     "tabs": [
       {
@@ -14,17 +11,10 @@
         "groups": [
           {
             "group": "Introduction",
-            "pages": [
-              { "path": "fr/overview", "language": "fr" },
-              { "path": "en/overview", "language": "en" },
-              { "path": "es/overview", "language": "es" },
-              { "path": "de/overview", "language": "de" },
-              { "path": "it/overview", "language": "it" }
-            ]
+            "pages": ["introduction/overview"]
           }
         ]
       }
     ]
   }
 }
- 
