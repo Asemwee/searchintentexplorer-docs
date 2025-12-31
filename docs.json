@@ -11,7 +11,12 @@
         "groups": [
           {
             "group": "Introduction",
-            "pages": ["introduction/overview.mdx"]
+            "pages": [
+              {
+                "path": "introduction/overview",
+                "title": "Vue d’ensemble"
+              }
+            ]
           }
         ]
       }
