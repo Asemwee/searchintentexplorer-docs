@@ -6,7 +6,7 @@
   },
   "i18n": {
     "defaultLanguage": "fr",
-    "languages": ["fr", "en", "es", "de", "it"]
+    "languages": ["fr", "en"]
   },
   "navigation": {
     "tabs": [
@@ -18,13 +18,8 @@
             "pages": [
               { "path": "introduction/fr/overview", "language": "fr" },
               { "path": "introduction/fr/getting-started", "language": "fr" },
-
               { "path": "introduction/en/overview", "language": "en" },
-              { "path": "introduction/en/getting-started", "language": "en" },
-
-              { "path": "introduction/es/overview", "language": "es" },
-              { "path": "introduction/de/overview", "language": "de" },
-              { "path": "introduction/it/overview", "language": "it" }
+              { "path": "introduction/en/getting-started", "language": "en" }
             ]
           }
         ]
