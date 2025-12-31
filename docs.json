@@ -1,0 +1,27 @@
+{
+  "name": "Search Intent Explorer",
+  "theme": "mint",
+  "colors": {
+    "primary": "#16a34a"
+  },
+  "i18n": {
+    "defaultLanguage": "fr",
+    "languages": ["fr", "en"]
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              { "path": "introduction/overview", "title": "Vue d’ensemble" },
+              { "path": "introduction/getting-started", "title": "Démarrer" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
