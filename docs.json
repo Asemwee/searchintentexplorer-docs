@@ -1,11 +1,20 @@
 {
   "name": "Search Intent Explorer",
   "theme": "mint",
-  "homepage": "introduction/overview",
-  "navigation": [
-    {
-      "group": "Introduction",
-      "pages": ["introduction/overview"]
-    }
-  ]
+  "colors": {
+    "primary": "#16a34a"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": ["introduction/overview"]
+          }
+        ]
+      }
+    ]
+  }
 }
