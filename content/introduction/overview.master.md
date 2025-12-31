@@ -1,4 +1,4 @@
-<!-- lang:fr -->
+## fr
 ---
 title: Vue d’ensemble
 ---
@@ -6,7 +6,7 @@ title: Vue d’ensemble
 
 Search Intent Explorer aide à identifier quelles intentions de recherche théoriques sont soutenues par une demande réelle.
 
-<!-- lang:en -->
+## en
 ---
 title: Overview
 ---
