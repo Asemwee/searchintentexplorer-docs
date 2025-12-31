@@ -13,10 +13,10 @@
           {
             "group": "Introduction",
             "pages": [
-              "fr/introduction/faq",
               "fr/introduction/overview",
               "fr/introduction/getting-started",
-              "fr/introduction/when-using"
+              "fr/introduction/when-using",
+              "fr/introduction/faq"
             ]
           }
         ]
@@ -24,13 +24,13 @@
       {
         "language": "en",
         "pages": [
-          "en/introduction/faq",
           {
             "group": "Introduction",
             "pages": [
               "en/introduction/overview",
               "en/introduction/getting-started",
-              "en/introduction/when-using"
+              "en/introduction/when-using",
+              "en/introduction/faq"
             ]
           }
         ]
