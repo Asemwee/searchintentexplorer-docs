@@ -4,24 +4,47 @@
   "colors": {
     "primary": "#16a34a"
   },
-  "i18n": {
-    "defaultLanguage": "fr",
-    "languages": ["fr", "en"]
-  },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "fr",
+        "tabs": [
           {
-            "group": "Introduction",
-            "pages": [
-              { "path": "introduction/overview", "title": "Vue d’ensemble" },
-              { "path": "introduction/getting-started", "title": "Démarrer" }
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  { "path": "fr/introduction/overview", "title": "Vue d’ensemble" },
+                  { "path": "fr/introduction/getting-started", "title": "Démarrer" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  { "path": "en/introduction/overview", "title": "Overview" },
+                  { "path": "en/introduction/getting-started", "title": "Getting started" }
+                ]
+              }
             ]
           }
         ]
       }
     ]
-  }
-} 
+  },
+  "redirects": [
+    { "source": "/", "destination": "/fr/introduction/overview", "permanent": false },
+    { "source": "/introduction/overview", "destination": "/fr/introduction/overview", "permanent": false },
+    { "source": "/introduction/getting-started", "destination": "/fr/introduction/getting-started", "permanent": false }
+  ]
+}
