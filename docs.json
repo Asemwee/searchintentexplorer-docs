@@ -16,10 +16,10 @@
           {
             "group": "Introduction",
             "pages": [
-              { "path": "introduction/fr/overview", "language": "fr" },
-              { "path": "introduction/fr/getting-started", "language": "fr" },
-              { "path": "introduction/en/overview", "language": "en" },
-              { "path": "introduction/en/getting-started", "language": "en" }
+              { "path": "fr/introduction/overview", "language": "fr" },
+              { "path": "fr/introduction/getting-started", "language": "fr" },
+              { "path": "en/introduction/overview", "language": "en" },
+              { "path": "en/introduction/getting-started", "language": "en" }
             ]
           }
         ]
