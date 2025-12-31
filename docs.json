@@ -19,6 +19,15 @@
               "fr/introduction/faq",
               "fr/introduction/test"
             ]
+          },
+          {
+            "group": "Cas d'usage",
+            "pages": [
+              {
+                "group": "E-commerce",
+                "pages": []
+              }
+            ]
           }
         ]
       },
