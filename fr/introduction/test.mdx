@@ -1,72 +1,67 @@
 ---
-title: "Test"
+title: "Diagramme : intent map"
 ---
 
+## Diagramme : intent map
+
+```mermaid
 flowchart LR
-  %% =========================
-  %% Axes (visuels)
-  %% =========================
-  A0([Generic]) --- A1([Specific])
-  B0([Low popularity]) --- B1([High popularity])
+  %% 2 colonnes (Generic -> Specific) × 2 lignes (High -> Low)
+  %% Grille via noeuds “ancres”
+  HG([High popularity]):::axis --- HS([High popularity]):::axis
+  LG([Low popularity]):::axis --- LS([Low popularity]):::axis
 
-  %% =========================
-  %% 4 quadrants (zones)
-  %% =========================
-  subgraph Q1["Barren ground (High popularity × Generic)"]
+  G([Generic]):::axis --- S([Specific]):::axis
+
+  %% Quadrants
+  subgraph Q1["Barren ground"]
     direction TB
-    q1a["👎 Conversion"]
-    q1b["👎 Competitive pressure"]
-    q1p["T-shirt"]
+    q1p["T-shirt"]:::tag
+    q1a["👎 Conversion"]:::bad
+    q1b["👎 Competitive pressure"]:::bad
   end
 
-  subgraph Q2["Golden area (High popularity × Specific)"]
+  subgraph Q2["Golden area"]
     direction TB
-    q2p1["T-shirt : XS"]
-    q2p2["T-shirt : XXS"]
-    q2p3["T-shirt : XS, White"]
-    q2p4["T-shirt : XS, White, Stussy"]
+    q2p1["T-shirt : XS"]:::tag
+    q2p2["T-shirt : XXS"]:::tag
+    q2p3["T-shirt : XS, White"]:::tag
+    q2p4["T-shirt : XS, White, Stussy"]:::tag
 
-    q2g1["👍 Quick results"]
-    q2g2["👍 Attractivity"]
-    q2g3["👍 Exhaustivity"]
-    q2g4["👍 Conversion"]
+    q2g1["👍 Quick results"]:::good
+    q2g2["👍 Attractivity"]:::good
+    q2g3["👍 Exhaustivity"]:::good
+    q2g4["👍 Conversion"]:::good
   end
 
-  subgraph Q3["Wasteland (Low popularity × Generic)"]
+  subgraph Q3["Wasteland"]
     direction TB
-    q3b["👎 Attractivity"]
+    q3b["👎 Attractivity"]:::bad
   end
 
-  subgraph Q4["Abyssal plain (Low popularity × Specific)"]
+  subgraph Q4["Abyssal plain"]
     direction TB
-    q4p1["T-shirt : XXXS"]
-    q4p2["T-shirt : XXXS, White"]
-    q4p3["T-shirt : XXXS, White, Stussy"]
-
-    q4b1["👎 Productivity"]
-    q4b2["👎 Saturation"]
+    q4p1["T-shirt : XXXS"]:::tag
+    q4p2["T-shirt : XXXS, White"]:::tag
+    q4p3["T-shirt : XXXS, White, Stussy"]:::tag
+    q4b1["👎 Productivity"]:::bad
+    q4b2["👎 Saturation"]:::bad
   end
 
-  %% =========================
-  %% Mise en page (liens invisibles)
-  %% =========================
-  %% On crée 2 rangées : haut (Q1,Q2) et bas (Q3,Q4)
+  %% Placement (liens invisibles)
+  HG --- Q1
+  HS --- Q2
+  LG --- Q3
+  LS --- Q4
+
+  %% Connexions pour stabiliser la disposition
   Q1 --- Q2
   Q3 --- Q4
   Q1 --- Q3
   Q2 --- Q4
 
-  %% Liens invisibles pour aider Mermaid à garder la grille
-  linkStyle 0,1,2,3 stroke:transparent
-
-  %% =========================
-  %% Styles (optionnel)
-  %% =========================
+  %% Styles
   classDef good fill:#22c55e,stroke:#16a34a,color:#0b1f12;
   classDef bad fill:#ef4444,stroke:#b91c1c,color:#ffffff;
   classDef tag fill:#0b1220,stroke:#334155,color:#e2e8f0;
-
-  class q2g1,q2g2,q2g3,q2g4 good;
-  class q1a,q1b,q3b,q4b1,q4b2 bad;
-
-  class q1p,q2p1,q2p2,q2p3,q2p4,q4p1,q4p2,q4p3 tag;
+  classDef axis fill:transparent,stroke:transparent,color:#cbd5e1;
