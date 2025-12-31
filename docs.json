@@ -5,23 +5,37 @@
     "primary": "#16a34a"
   },
   "navigation": {
-    "global": {
-      "languages": [
-        { "language": "fr", "default": true, "href": "/fr/introduction/overview" },
-        { "language": "en", "href": "/en/introduction/overview" }
-      ]
-    },
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "fr",
+        "tabs": [
           {
-            "group": "Introduction",
-            "pages": [
-              { "path": "fr/introduction/overview", "title": "Vue d’ensemble" },
-              { "path": "fr/introduction/getting-started", "title": "Démarrer" },
-              { "path": "en/introduction/overview", "title": "Overview" },
-              { "path": "en/introduction/getting-started", "title": "Getting started" }
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  { "path": "fr/introduction/overview", "title": "Vue d’ensemble" },
+                  { "path": "fr/introduction/getting-started", "title": "Démarrer" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  { "path": "en/introduction/overview", "title": "Overview" },
+                  { "path": "en/introduction/getting-started", "title": "Getting started" }
+                ]
+              }
             ]
           }
         ]
