@@ -1,5 +1,6 @@
 {
   "name": "Search Intent Explorer",
+  "theme": "mint",
   "homepage": "introduction/overview",
   "navigation": [
     {
