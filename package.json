@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "build:i18n": "node scripts/build-i18n.mjs"
-  }
-}
