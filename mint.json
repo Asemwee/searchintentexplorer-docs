@@ -1,0 +1,11 @@
+{
+  "name": "Search Intent Explorer",
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": [
+        "introduction/overview"
+      ]
+    }
+  ]
+}
