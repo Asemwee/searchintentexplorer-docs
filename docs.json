@@ -1,4 +1,5 @@
 {
+  "$schema": "https://mintlify.com/docs.json",
   "name": "Search Intent Explorer",
   "theme": "mint",
   "colors": {
@@ -8,34 +9,24 @@
     "languages": [
       {
         "language": "fr",
-        "tabs": [
+        "groups": [
           {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Introduction",
-                "pages": [
-                  { "path": "fr/introduction/overview", "title": "Vue d’ensemble" },
-                  { "path": "fr/introduction/getting-started", "title": "Démarrer" }
-                ]
-              }
+            "group": "Introduction",
+            "pages": [
+              "fr/introduction/overview",
+              "fr/introduction/getting-started"
             ]
           }
         ]
       },
       {
         "language": "en",
-        "tabs": [
+        "groups": [
           {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Introduction",
-                "pages": [
-                  { "path": "en/introduction/overview", "title": "Overview" },
-                  { "path": "en/introduction/getting-started", "title": "Getting started" }
-                ]
-              }
+            "group": "Introduction",
+            "pages": [
+              "en/introduction/overview",
+              "en/introduction/getting-started"
             ]
           }
         ]
@@ -43,8 +34,9 @@
     ]
   },
   "redirects": [
-    { "source": "/", "destination": "/fr/introduction/overview", "permanent": false },
-    { "source": "/introduction/overview", "destination": "/fr/introduction/overview", "permanent": false },
-    { "source": "/introduction/getting-started", "destination": "/fr/introduction/getting-started", "permanent": false }
+    {
+      "source": "/",
+      "destination": "/fr/introduction/overview"
+    }
   ]
 }
