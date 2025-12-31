@@ -1,20 +1,20 @@
 ---
-title: Vue d’ensemble
+title: Overview
 ---
 
 # Search Intent Explorer
 
-Search Intent Explorer aide à identifier quelles intentions de recherche théoriques sont soutenues par une demande réelle.
+Search Intent Explorer helps identify which theoretical search intents are supported by real user demand.
 
-## Principe
+## Principle
 
-On part d’une entité principale et de ses propriétés.
+The process starts from a main entity and its properties.
 
-## Ce que l’outil produit
+## What the tool produces
 
-- Intentions théoriques
-- Vérification via suggestions Google
+- Theoretical intents
+- Validation via Google search suggestions
 
-## Cas d’usage
+## Use cases
 
-Quand on veut valider une opportunité avant de produire du contenu.
+When you want to validate an opportunity before producing content.
