@@ -13,6 +13,7 @@
           {
             "group": "Introduction",
             "pages": [
+              "fr/introduction/faq",
               "fr/introduction/overview",
               "fr/introduction/getting-started",
               "fr/introduction/when-using"
@@ -22,7 +23,8 @@
       },
       {
         "language": "en",
-        "groups": [
+        "pages": [
+          "en/introduction/faq",
           {
             "group": "Introduction",
             "pages": [
