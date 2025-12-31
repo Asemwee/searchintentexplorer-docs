@@ -1,0 +1,72 @@
+---
+title: "Test"
+---
+
+flowchart LR
+  %% =========================
+  %% Axes (visuels)
+  %% =========================
+  A0([Generic]) --- A1([Specific])
+  B0([Low popularity]) --- B1([High popularity])
+
+  %% =========================
+  %% 4 quadrants (zones)
+  %% =========================
+  subgraph Q1["Barren ground (High popularity × Generic)"]
+    direction TB
+    q1a["👎 Conversion"]
+    q1b["👎 Competitive pressure"]
+    q1p["T-shirt"]
+  end
+
+  subgraph Q2["Golden area (High popularity × Specific)"]
+    direction TB
+    q2p1["T-shirt : XS"]
+    q2p2["T-shirt : XXS"]
+    q2p3["T-shirt : XS, White"]
+    q2p4["T-shirt : XS, White, Stussy"]
+
+    q2g1["👍 Quick results"]
+    q2g2["👍 Attractivity"]
+    q2g3["👍 Exhaustivity"]
+    q2g4["👍 Conversion"]
+  end
+
+  subgraph Q3["Wasteland (Low popularity × Generic)"]
+    direction TB
+    q3b["👎 Attractivity"]
+  end
+
+  subgraph Q4["Abyssal plain (Low popularity × Specific)"]
+    direction TB
+    q4p1["T-shirt : XXXS"]
+    q4p2["T-shirt : XXXS, White"]
+    q4p3["T-shirt : XXXS, White, Stussy"]
+
+    q4b1["👎 Productivity"]
+    q4b2["👎 Saturation"]
+  end
+
+  %% =========================
+  %% Mise en page (liens invisibles)
+  %% =========================
+  %% On crée 2 rangées : haut (Q1,Q2) et bas (Q3,Q4)
+  Q1 --- Q2
+  Q3 --- Q4
+  Q1 --- Q3
+  Q2 --- Q4
+
+  %% Liens invisibles pour aider Mermaid à garder la grille
+  linkStyle 0,1,2,3 stroke:transparent
+
+  %% =========================
+  %% Styles (optionnel)
+  %% =========================
+  classDef good fill:#22c55e,stroke:#16a34a,color:#0b1f12;
+  classDef bad fill:#ef4444,stroke:#b91c1c,color:#ffffff;
+  classDef tag fill:#0b1220,stroke:#334155,color:#e2e8f0;
+
+  class q2g1,q2g2,q2g3,q2g4 good;
+  class q1a,q1b,q3b,q4b1,q4b2 bad;
+
+  class q1p,q2p1,q2p2,q2p3,q2p4,q4p1,q4p2,q4p3 tag;
