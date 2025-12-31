@@ -1,0 +1,27 @@
+name: Build i18n docs
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-i18n:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate localized MDX
+        run: |
+          node scripts/build-i18n.mjs
+
+      - name: Commit generated files (if changed)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add introduction/*/*.mdx || true
+          git diff --cached --quiet || git commit -m "chore(docs): generate i18n pages"
+          git push
